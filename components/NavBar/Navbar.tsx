@@ -9,15 +9,28 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 
 const NavItems = ({ mobile = false }: { mobile?: boolean }) => (
   <>
-    <Button variant="ghost" asChild className={mobile ? "text-white w-full justify-start" : ""}>
-      <Link href="/services">Services</Link>
-    </Button>
-    <Button variant="ghost" asChild className={mobile ? "text-white w-full justify-start" : ""}>
-      <Link href="/about">About</Link>
-    </Button>
-    <Button variant="ghost" asChild className={mobile ? "text-white w-full justify-start" : ""}>
-      <Link href="/contact">Contact</Link>
-    </Button>
+  <div>
+    <Link href="/" className={mobile ? "hidden " : "text-2xl font-bold text-white"}>
+        BridgeCore
+    </Link>
+  </div>
+
+  <div>
+      <Link href="/" className={mobile ? "text-2xl font-bold text-white" : "hidden"}>
+          BridgeCore
+      </Link>
+
+      <Button variant="ghost" asChild className={mobile ? "text-white w-full justify-start" : ""}>
+        <Link href="/services">Services</Link>
+      </Button>
+      <Button variant="ghost" asChild className={mobile ? "text-white w-full justify-start" : ""}>
+        <Link href="/about">About</Link>
+      </Button>
+      <Button variant="ghost" asChild className={mobile ? "text-white w-full justify-start" : ""}>
+        <Link href="/contact">Contact</Link>
+      </Button>
+  </div>
+
   </>
 )
 
@@ -34,13 +47,13 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${isScrolled ? "bg-blue-900/80 backdrop-blur-sm" : "bg-transparent"}`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${isScrolled ? "bg-black backdrop-blur-sm" : "bg-transparent"}`}
     >
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <Link href="/" className="text-2xl font-bold text-white">
-          BridgeCore
+        <Link href="/" className=":hiden text-2xl font-bold text-white">
+
         </Link>
-        <div className="hidden md:flex space-x-4">
+        <div className="hidden md:flex justify-between space-x-4 w-full">
           <NavItems />
         </div>
         <Sheet>
