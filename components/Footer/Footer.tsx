@@ -13,80 +13,81 @@ export function Footer() {
     <footer className="bg-black text-gray-300">
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-          <div className="hidden md:block grid grid-cols-2 gap-8 xl:col-span-2">
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 className="text-sm font-semibold text-white tracking-wider uppercase">
-                  Soluciones
-                </h3>
-                <ul className="mt-4 space-y-4">
-                  <li>
-                    <Link href="#" className="text-base hover:text-blue-900">
-                      Desarrollo Móvil
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#" className="text-base hover:text-blue-900">
-                      Soluciones Web
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#" className="text-base hover:text-blue-900">
-                      Automatización
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#" className="text-base hover:text-blue-900">
-                      Consultoría IT
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div className="mt-12 md:mt-0">
-                <h3 className="text-sm font-semibold text-white tracking-wider uppercase">
-                  Soporte
-                </h3>
-                <ul className="mt-4 space-y-4">
-                  <li>
-                    <Link href="#" className="text-base hover:text-blue-900">
-                      Precios
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#" className="text-base hover:text-blue-900">
-                      Documentación
-                    </Link>
-                  </li>
-                  {/*<li>
+          <>
+            <div className="grid grid-cols-2 gap-8 xl:col-span-2">
+              <div className="md:grid md:grid-cols-2 md:gap-8">
+                <div className="hidden md:block">
+                  <h3 className="text-sm font-semibold text-white tracking-wider uppercase">
+                    Soluciones
+                  </h3>
+                  <ul className="mt-4 space-y-4">
+                    <li>
+                      <Link href="#" className="text-base hover:text-blue-900">
+                        Desarrollo Móvil
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="#" className="text-base hover:text-blue-900">
+                        Soluciones Web
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="#" className="text-base hover:text-blue-900">
+                        Automatización
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="#" className="text-base hover:text-blue-900">
+                        Consultoría IT
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+                <div className=" hidden md:block mt-12 md:mt-0">
+                  <h3 className="text-sm font-semibold text-white tracking-wider uppercase">
+                    Soporte
+                  </h3>
+                  <ul className="mt-4 space-y-4">
+                    <li>
+                      <Link href="#" className="text-base hover:text-blue-900">
+                        Precios
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="#" className="text-base hover:text-blue-900">
+                        Documentación
+                      </Link>
+                    </li>
+                    {/*<li>
                     <Link href="#" className="text-base hover:text-blue-900">
                       Guías
                     </Link>
                   </li>*/}
-                  <li>
-                    <Link href="#" className="text-base hover:text-blue-900">
-                      Estado de API
-                    </Link>
-                  </li>
-                </ul>
+                    <li>
+                      <Link href="#" className="text-base hover:text-blue-900">
+                        Estado de API
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 className="text-sm font-semibold text-white tracking-wider uppercase">
-                  Compañía
-                </h3>
-                <ul className="mt-4 space-y-4">
-                  <li>
-                    <Link href="#" className="text-base hover:text-blue-900">
-                      Acerca de
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#" className="text-base hover:text-blue-900">
-                      Blog
-                    </Link>
-                  </li>
-                  {/*<li>
+              <div className="md:grid md:grid-cols-2 md:gap-8">
+                <div className="hidden md:block">
+                  <h3 className="text-sm font-semibold text-white tracking-wider uppercase">
+                    Compañía
+                  </h3>
+                  <ul className="mt-4 space-y-4">
+                    <li>
+                      <Link href="#" className="text-base hover:text-blue-900">
+                        Acerca de
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="#" className="text-base hover:text-blue-900">
+                        Blog
+                      </Link>
+                    </li>
+                    {/*<li>
                     <Link href="#" className="text-base hover:text-blue-900">
                       Empleos
                     </Link>
@@ -96,32 +97,33 @@ export function Footer() {
                       Prensa
                     </Link>
                   </li>*/}
-                  <li>
-                    <Link href="#" className="text-base hover:text-blue-900">
-                      Socios
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div className="mt-12 md:mt-0">
-                <h3 className="text-sm font-semibold text-white tracking-wider uppercase">
-                  Legal
-                </h3>
-                <ul className="mt-4 space-y-4">
-                  <li>
-                    <Link href="#" className="text-base hover:text-blue-900">
-                      Privacidad
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#" className="text-base hover:text-blue-900">
-                      Términos
-                    </Link>
-                  </li>
-                </ul>
+                    <li>
+                      <Link href="#" className="text-base hover:text-blue-900">
+                        Socios
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+                <div className="hidden md:block mt-12 md:mt-0">
+                  <h3 className="text-sm font-semibold text-white tracking-wider uppercase">
+                    Legal
+                  </h3>
+                  <ul className="mt-4 space-y-4">
+                    <li>
+                      <Link href="#" className="text-base hover:text-blue-900">
+                        Privacidad
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="#" className="text-base hover:text-blue-900">
+                        Términos
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
+          </>
           <div className="mt-8 xl:mt-0">
             <h3 className="text-sm font-semibold text-white tracking-wider uppercase">
               Suscríbete a nuestro boletín
