@@ -1,5 +1,5 @@
-import { ArrowRight } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export function LandingPage() {
   return (
@@ -23,6 +23,5 @@ export function LandingPage() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-
