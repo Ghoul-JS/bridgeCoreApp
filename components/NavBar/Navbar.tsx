@@ -1,28 +1,62 @@
+"use client"
+
+import * as React from "react"
+import Link from "next/link"
+import { Menu } from "lucide-react"
+
 import { Button } from "@/components/ui/button"
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+
+const NavItems = ({ mobile = false }: { mobile?: boolean }) => (
+  <>
+    <Button variant="ghost" asChild className={mobile ? "text-white w-full justify-start" : ""}>
+      <Link href="/services">Services</Link>
+    </Button>
+    <Button variant="ghost" asChild className={mobile ? "text-white w-full justify-start" : ""}>
+      <Link href="/about">About</Link>
+    </Button>
+    <Button variant="ghost" asChild className={mobile ? "text-white w-full justify-start" : ""}>
+      <Link href="/contact">Contact</Link>
+    </Button>
+  </>
+)
 
 export function Navbar() {
+  const [isScrolled, setIsScrolled] = React.useState(false)
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10)
+    }
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
+
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-gray-800 bg-black/80 backdrop-blur-sm">
-      <div className="container flex h-16 items-center">
-        <div className="flex items-center space-x-4">
-          <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-400">
-            BridgeCore
-          </span>
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${isScrolled ? "bg-blue-900/80 backdrop-blur-sm" : "bg-transparent"}`}
+    >
+      <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
+        <Link href="/" className="text-2xl font-bold text-white">
+          BridgeCore
+        </Link>
+        <div className="hidden md:flex space-x-4">
+          <NavItems />
         </div>
-        <nav className="ml-auto flex items-center space-x-6 text-sm font-medium">
-          <a className="text-gray-400 transition-colors hover:text-blue-400" href="#services">
-            Servicios
-          </a>
-          <a className="text-gray-400 transition-colors hover:text-blue-400" href="#about">
-            Acerca de
-          </a>
-          <a className="text-gray-400 transition-colors hover:text-blue-400" href="#contact">
-            Contacto
-          </a>
-          <Button className="bg-blue-600 hover:bg-blue-700 text-white">Iniciar Proyecto</Button>
-        </nav>
-      </div>
+        <Sheet>
+          <SheetTrigger asChild>
+            <Button variant="ghost" size="icon" className="md:hidden text-white">
+              <Menu className="h-6 w-6" />
+              <span className="sr-only">Toggle menu</span>
+            </Button>
+          </SheetTrigger>
+          <SheetContent side="right" className="bg-blue-900/95 text-white">
+            <nav className="flex flex-col space-y-4 mt-6">
+              <NavItems mobile />
+            </nav>
+          </SheetContent>
+        </Sheet>
+      </nav>
     </header>
   )
 }
-
