@@ -3,9 +3,6 @@
 import * as React from "react"
 import Link from "next/link"
 import { Menu } from "lucide-react"
-import Image from "next/image"
-import img from '@/public/1-removebg-preview.png'
-
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 
@@ -22,13 +19,13 @@ const NavItems = ({ mobile = false }: { mobile?: boolean }) => (
         BringCore
       </Link>
 
-      <Button variant="ghost" asChild className={mobile ? "text-white w-full justify-start" : ""}>
+      <Button variant="ghost" asChild className={mobile ? "text-white w-full justify-start" : "text-white hover:text-white"}>
         <Link href="/services">Services</Link>
       </Button>
-      <Button variant="ghost" asChild className={mobile ? "text-white w-full justify-start" : ""}>
+      <Button variant="ghost" asChild className={mobile ? "text-white w-full justify-start" : "text-white hover:text-white"}>
         <Link href="/about">About</Link>
       </Button>
-      <Button variant="ghost" asChild className={mobile ? "text-white w-full justify-start" : ""}>
+      <Button variant="ghost" asChild className={mobile ? "text-white w-full justify-start" : "text-white hover:text-white"}>
         <Link href="/contact">Contact</Link>
       </Button>
   </div>
