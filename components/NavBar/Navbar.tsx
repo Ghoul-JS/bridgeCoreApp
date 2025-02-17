@@ -3,21 +3,23 @@
 import * as React from "react"
 import Link from "next/link"
 import { Menu } from "lucide-react"
+import Image from "next/image"
+import img from '@/public/1-removebg-preview.png'
 
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 
 const NavItems = ({ mobile = false }: { mobile?: boolean }) => (
-  <>
+  <div className="flex justify-between w-full items-center">
   <div>
     <Link href="/" className={mobile ? "hidden " : "text-2xl font-bold text-white"}>
-        BridgeCore
+        BringCore
     </Link>
   </div>
 
   <div>
       <Link href="/" className={mobile ? "text-2xl font-bold text-white" : "hidden"}>
-          BridgeCore
+        BringCore
       </Link>
 
       <Button variant="ghost" asChild className={mobile ? "text-white w-full justify-start" : ""}>
@@ -31,7 +33,7 @@ const NavItems = ({ mobile = false }: { mobile?: boolean }) => (
       </Button>
   </div>
 
-  </>
+  </div>
 )
 
 export function Navbar() {
