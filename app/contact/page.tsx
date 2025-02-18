@@ -36,7 +36,8 @@ const Contact = () => {
         showConfirmButton: false,
         timer: 1500,
       });
-    
+
+      form.current?.reset();
   };
 
   return (
