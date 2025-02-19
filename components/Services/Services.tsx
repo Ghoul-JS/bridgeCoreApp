@@ -7,9 +7,9 @@ const services = [
   { title: "Consultoría IT", icon: Code, description: "Asesoramiento tecnológico experto" },
 ]
 
-export function Services() {
+export function Services({ id }: { id?: string }) {
   return (
-    <section id="services" className="w-full py-12 md:py-24 lg:py-32">
+    <section id={id} className="w-full py-12 md:py-24 lg:py-32">
       <div className="container px-4 md:px-6">
         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-center mb-12 text-white">
           Nuestros Servicios

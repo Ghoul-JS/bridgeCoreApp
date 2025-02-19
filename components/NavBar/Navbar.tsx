@@ -5,33 +5,57 @@ import Link from "next/link"
 import { Menu } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { usePathname, useRouter } from "next/navigation"; 
 
-const NavItems = ({ mobile = false }: { mobile?: boolean }) => (
-  <div className="flex justify-between w-full items-center">
-  <div>
-    <Link href="/" className={mobile ? "hidden " : "text-2xl font-bold text-white"}>
-        BringCore
-    </Link>
-  </div>
+const NavItems = ({ mobile = false }: { mobile?: boolean }) => {
+  const router = useRouter(); 
+  const pathname = usePathname(); 
 
-  <div>
-      <Link href="/" className={mobile ? "text-2xl font-bold text-white" : "hidden"}>
-        BringCore
-      </Link>
+  const handleScroll = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>, id: string, router: ReturnType<typeof useRouter>, pathname: string) => {
+    event.preventDefault();
+    
+    if (pathname !== "/") {
+      router.push("/");
+      setTimeout(() => {
+        document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+      }, 500); 
+    } else {
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  
+  return (
 
-      <Button variant="ghost" asChild className={mobile ? "text-white w-full justify-start" : "text-white hover:text-white"}>
-        <Link href="/services">Services</Link>
-      </Button>
-      <Button variant="ghost" asChild className={mobile ? "text-white w-full justify-start" : "text-white hover:text-white"}>
-        <Link href="/about">About</Link>
-      </Button>
-      <Button variant="ghost" asChild className={mobile ? "text-white w-full justify-start" : "text-white hover:text-white"}>
-        <Link href="/contact">Contact</Link>
-      </Button>
-  </div>
+    <div className="flex justify-between w-full items-center">
+      <div>
+        <Link href="/" className={mobile ? "hidden " : "text-2xl font-bold text-white"}>
+          BringCore
+        </Link>
+      </div>
 
-  </div>
-)
+      <div>
+        <Link href="/" className={mobile ? "text-2xl font-bold text-white" : "hidden"}>
+          BringCore
+        </Link>
+
+        <Button variant="ghost" asChild className={mobile ? "text-white w-full justify-start" : "text-white hover:text-white"}>
+          <a href="#services" onClick={(e) => handleScroll(e, "services", router, pathname)}>
+            Services
+          </a>
+        </Button>
+        
+        <Button variant="ghost" asChild className={mobile ? "text-white w-full justify-start" : "text-white hover:text-white"}>
+          <Link href="/about">About</Link>
+        </Button>
+        <Button variant="ghost" asChild className={mobile ? "text-white w-full justify-start" : "text-white hover:text-white"}>
+          <Link href="/contact">Contact</Link>
+        </Button>
+      </div>
+
+    </div>
+  )
+}
+
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = React.useState(false)
@@ -43,6 +67,7 @@ export function Navbar() {
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
+
 
   return (
     <header

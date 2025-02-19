@@ -17,7 +17,7 @@ export default function Home() {
 
       <main className="flex-1 relative z-10">
         <LandingPage />
-        <Services />
+        <Services id="services"/>
 
         <section id="about" className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
