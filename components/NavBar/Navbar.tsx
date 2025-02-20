@@ -39,6 +39,12 @@ const NavItems = ({ mobile = false }: { mobile?: boolean }) => {
         </Link>
 
         <Button variant="ghost" asChild className={mobile ? "text-white w-full justify-start" : "text-white hover:text-white"}>
+          <a href="/" onClick={(e) => handleScroll(e, "services", router, pathname)}>
+            Inicio 
+          </a>
+        </Button>
+
+        <Button variant="ghost" asChild className={mobile ? "text-white w-full justify-start" : "text-white hover:text-white"}>
           <a href="#services" onClick={(e) => handleScroll(e, "services", router, pathname)}>
             Services
           </a>
