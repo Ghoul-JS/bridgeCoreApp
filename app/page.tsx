@@ -3,6 +3,7 @@ import { Navbar } from "@/components/NavBar/Navbar"
 import { LandingPage } from "@/components/LandingPage/LandingPage"
 import { Services } from "@/components/Services/Services"
 import { Footer } from "@/components/Footer/Footer"
+import Wpp from "@/components/Wpp/Wpp"
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
 
       <main className="flex-1 relative z-10">
         <LandingPage />
+        <Wpp />
         <Services id="services"/>
 
         <section id="about" className="w-full py-12 md:py-24 lg:py-32">
