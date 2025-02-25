@@ -6,6 +6,7 @@ import { Footer } from "@/components/Footer/Footer"
 import Wpp from "@/components/Wpp/Wpp"
 
 import Card from "@/components/CardPrueba/Card"
+import CarouselSlider from "@/components/Carousel/CarouselSlider"
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
 
         <Wpp />
         <Services id="services"/>
+        <CarouselSlider />
 
         <section id="about" className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
