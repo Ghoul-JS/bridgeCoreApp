@@ -8,6 +8,8 @@ import Wpp from "@/components/Wpp/Wpp"
 import Card from "@/components/CardPrueba/Card"
 import CarouselSlider from "@/components/Carousel/CarouselSlider"
 
+// import VrilBot from "@/components/VrilBot/VrilBot"
+
 export default function Home() {
   return (
     <div className="flex flex-col items-center min-h-screen bg-black text-gray-100 overflow-hidden">
@@ -24,6 +26,7 @@ export default function Home() {
         {/* <LandingPage /> */}
 
         <Wpp />
+        {/* <VrilBot /> */}
         <Services id="services"/>
         <CarouselSlider />
 

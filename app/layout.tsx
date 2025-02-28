@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import './globals.css'
 
+import VrilBot from "@/components/VrilBot/VrilBot"
+
 export const metadata: Metadata = {
   title: 'BridgeCore',
   description: 'Created with my hands',
@@ -13,7 +15,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      {/* <head>
+        <VrilBot />
+      </head> */}
+      <body>
+        {children}
+        <VrilBot />
+      </body>
     </html>
   )
 }
