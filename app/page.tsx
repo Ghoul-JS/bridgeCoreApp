@@ -3,7 +3,7 @@ import { Navbar } from "@/components/NavBar/Navbar"
 import { LandingPage } from "@/components/LandingPage/LandingPage"
 import { Services } from "@/components/Services/Services"
 import { Footer } from "@/components/Footer/Footer"
-import Wpp from "@/components/Wpp/Wpp"
+// import Wpp from "@/components/Wpp/Wpp"
 
 import Card from "@/components/CardPrueba/Card"
 import CarouselSlider from "@/components/Carousel/CarouselSlider"
@@ -25,7 +25,8 @@ export default function Home() {
       <main className="flex-1 relative z-10">
         {/* <LandingPage /> */}
 
-        <Wpp />
+        {/* <Wpp /> */}
+        {/* pto wp */}
         {/* <VrilBot /> */}
         <Services id="services"/>
         <CarouselSlider />
