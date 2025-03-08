@@ -1,0 +1,53 @@
+{
+  "Home": {
+    "title": "Innovación en Cada Línea de Código",
+    "text": "En BridgeCore, fusionamos creatividad y tecnología para desarrollar soluciones de software que impulsan el éxito de nuestros clientes. Nuestro equipo de expertos está comprometido con la excelencia y la innovación en cada proyecto.",
+    "button": "Conoce Más Sobre Nosotros"
+  },
+  "NavBar": {
+    "b1": "Servicios",
+    "b2": "Sobre nosotros",
+    "b3": "Contacto"
+  },
+  "LandingPage": {
+    "title": "Create Your Environment with",
+    "span1": "BridgeCore",
+    "text": " Transformando Ideas en Realidades Digitales Innovadoras",
+    "button": "Explora Nuestras Soluciones"
+  },
+  "Services": {
+    "service": "Nuestros Servicios"
+  },
+  "Footer": {
+    "categories": {
+      "solutions": {
+        "title": "Soluciones",
+        "items": [
+          "Desarrollo Móvil",
+          "Soluciones Web",
+          "Automatización",
+          "Consultoría IT"
+        ]
+      },
+      "support": {
+        "title": "Soporte",
+        "items": ["Precios", "Documentación", "Estado de API"]
+      },
+      "company": {
+        "title": "Compañía",
+        "items": ["Acerca de", "Blog", "Socios"]
+      },
+      "legal": {
+        "title": "Legal",
+        "items": ["Política de Privacidad", "Términos y Condiciones"]
+      },
+      "subscribe": {
+        "title": "Suscríbete a nuestro boletín",
+        "text": " Las últimas noticias, artículos y recursos, enviados a tu bandeja de entrada.",
+        "email": "Dirección de correo electrónico",
+        "button": "Suscribirse"
+      },
+      "derechos": "BridgeCore, Inc. Todos los derechos reservados."
+    }
+  }
+}

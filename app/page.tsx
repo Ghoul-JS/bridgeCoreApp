@@ -1,13 +1,15 @@
-import { Button } from "@/components/ui/button"
-import { Navbar } from "@/components/NavBar/Navbar"
-import { LandingPage } from "@/components/LandingPage/LandingPage"
-import { Services } from "@/components/Services/Services"
-import { Footer } from "@/components/Footer/Footer"
-import Wpp from "@/components/Wpp/Wpp"
-
-import Card from "@/components/CardPrueba/Card"
+"use client";
+import { Button } from "@/components/ui/button";
+import { Navbar } from "@/components/NavBar/Navbar";
+import { LandingPage } from "@/components/LandingPage/LandingPage";
+import { Services } from "@/components/Services/Services";
+import { Footer } from "@/components/Footer/Footer";
+import Wpp from "@/components/Wpp/Wpp";
+import { useI18N } from "@/context/i18n";
+import Card from "@/components/CardPrueba/Card";
 
 export default function Home() {
+  const { t } = useI18N();
   return (
     <div className="flex flex-col items-center min-h-screen bg-black text-gray-100 overflow-hidden">
       {/* <div className="absolute inset-0 z-0">
@@ -23,20 +25,20 @@ export default function Home() {
         {/* <LandingPage /> */}
 
         <Wpp />
-        <Services id="services"/>
+        <Services id="services" />
 
         <section id="about" className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-white">
-                Innovación en Cada Línea de Código
+                {t("Home.title")}
               </h2>
               <p className="max-w-[900px] text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed mx-auto">
-                En BridgeCore, fusionamos creatividad y tecnología para desarrollar soluciones de software que impulsan
-                el éxito de nuestros clientes. Nuestro equipo de expertos está comprometido con la excelencia y la
-                innovación en cada proyecto.
+                {t("Home.text")}
               </p>
-              <Button className="bg-blue-600 hover:bg-blue-700 text-white">Conoce Más Sobre Nosotros</Button>
+              <Button className="bg-blue-600 hover:bg-blue-700 text-white">
+                {t("Home.button")}
+              </Button>
             </div>
           </div>
         </section>
@@ -44,6 +46,5 @@ export default function Home() {
 
       <Footer />
     </div>
-  )
+  );
 }
-

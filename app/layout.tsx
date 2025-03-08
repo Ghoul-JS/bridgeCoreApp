@@ -1,19 +1,21 @@
-import type { Metadata } from 'next'
-import './globals.css'
-
+import type { Metadata } from "next";
+import "./globals.css";
+import { I18NProvider } from "@/context/i18n";
 export const metadata: Metadata = {
-  title: 'BridgeCore',
-  description: 'Created with my hands',
-}
+  title: "BridgeCore",
+  description: "Created with my hands",
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <I18NProvider>{children}</I18NProvider>
+      </body>
     </html>
-  )
+  );
 }

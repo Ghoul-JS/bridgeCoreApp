@@ -43,7 +43,7 @@ export function Footer() {
                     </li>
                   </ul>
                 </div>
-                <div className=" hidden md:block mt-12 md:mt-0">
+                <div className="hidden md:block mt-12 md:mt-0">
                   <h3 className="text-sm font-semibold text-white tracking-wider uppercase">
                     Soporte
                   </h3>
