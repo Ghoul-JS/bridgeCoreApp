@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 "use client";
 import { Button } from "@/components/ui/button";
 import { Navbar } from "@/components/NavBar/Navbar";
@@ -7,6 +8,19 @@ import { Footer } from "@/components/Footer/Footer";
 import Wpp from "@/components/Wpp/Wpp";
 import { useI18N } from "@/context/i18n";
 import Card from "@/components/CardPrueba/Card";
+=======
+import { Button } from "@/components/ui/button"
+import { Navbar } from "@/components/NavBar/Navbar"
+import { LandingPage } from "@/components/LandingPage/LandingPage"
+import { Services } from "@/components/Services/Services"
+import { Footer } from "@/components/Footer/Footer"
+// import Wpp from "@/components/Wpp/Wpp"
+
+import Card from "@/components/CardPrueba/Card"
+import CarouselSlider from "@/components/Carousel/CarouselSlider"
+
+// import VrilBot from "@/components/VrilBot/VrilBot"
+>>>>>>> 506520f81d6578d947a84c88ccb5fda5f78ac4c2
 
 export default function Home() {
   const { t } = useI18N();
@@ -24,8 +38,16 @@ export default function Home() {
       <main className="flex-1 relative z-10">
         {/* <LandingPage /> */}
 
+<<<<<<< HEAD
         <Wpp />
         <Services id="services" />
+=======
+        {/* <Wpp /> */}
+        {/* pto wp */}
+        {/* <VrilBot /> */}
+        <Services id="services"/>
+        <CarouselSlider />
+>>>>>>> 506520f81d6578d947a84c88ccb5fda5f78ac4c2
 
         <section id="about" className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
