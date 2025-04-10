@@ -21,10 +21,10 @@ const nextConfig = {
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
-  i18n: {
+  /*i18n: {
     locales: ["en", "es"],
     defaultLocale: "en",
-  },
+  },*/
 };
 
 mergeConfig(nextConfig, userConfig);
