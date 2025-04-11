@@ -40,6 +40,74 @@
       }
     ]
   },
+  "PP": [
+    {
+      "title": "Data Collection in Mobile Applications",
+      "description": "We detail what personal information we collect through our mobile applications, including usage data, location (if necessary for functionality) and any information voluntarily provided by the user."
+    },
+    {
+      "title": "Cookie Management and Browsing Data",
+      "description": "We explain how we use cookies and similar technologies on our web platforms to improve user experience, analyze traffic, and personalize content."
+    },
+    {
+      "title": "Security in Automated Processes",
+      "description": "We describe the protection measures implemented to safeguard data used in our business automation solutions, including encryption and access controls."
+    },
+    {
+      "title": "Privacy in Chatbot Interactions",
+      "description": "We specify how conversations and data shared through our chatbot systems are handled, stored, and protected, and how they are used to improve the service."
+    },
+    {
+      "title": "Sharing Data with Third Parties",
+      "description": "We detail when and how we might share information with technology partners, service providers, or legally authorized entities, always prioritizing user data protection."
+    },
+    {
+      "title": "User Rights",
+      "description": "We inform about the rights users have regarding their personal data, including access, rectification, deletion, portability, and opposition to processing."
+    },
+    {
+      "title": "Data Retention and Deletion",
+      "description": "We establish our policies on how long we keep user data in our systems and the processes for its secure deletion when no longer needed."
+    },
+    {
+      "title": "Policy Updates",
+      "description": "We explain how and when we might update our privacy policy, and how we will notify users about significant changes in our data handling practices."
+    }
+  ],
+  "TC": [
+    {
+      "title": "Scope of Services",
+      "description": "We clearly define the services we offer, including mobile development, web solutions, process automation, and chatbot systems, as well as the technical and operational limitations of each."
+    },
+    {
+      "title": "Intellectual Property",
+      "description": "We establish the intellectual property rights related to our products, source code, designs, and content, specifying what belongs to our company and what licenses are granted to the client."
+    },
+    {
+      "title": "User Responsibilities",
+      "description": "We detail the obligations of users when using our services, including the appropriate use of applications, web platforms, and automated systems that we develop."
+    },
+    {
+      "title": "Limitations of Liability",
+      "description": "We clarify the limits of our liability regarding service interruptions, technical errors, data loss, and other incidents that could affect the operation of our solutions."
+    },
+    {
+      "title": "Payment and Billing Terms",
+      "description": "We define the payment conditions, deadlines, accepted methods, refund policies, and any recurring charges related to our development and maintenance services."
+    },
+    {
+      "title": "Confidentiality",
+      "description": "We establish mutual confidentiality obligations regarding sensitive information exchanged during project development and solution implementation."
+    },
+    {
+      "title": "Cancellation and Termination",
+      "description": "We detail the conditions under which both parties can terminate the contractual relationship, including procedures, notifications, and consequences on active services."
+    },
+    {
+      "title": "Applicable Law and Dispute Resolution",
+      "description": "We specify the legal jurisdiction that governs our agreements and the mechanisms to resolve possible disputes, whether through mediation, arbitration, or judicial procedures."
+    }
+  ],
   "Footer": {
     "categories": {
       "solutions": {

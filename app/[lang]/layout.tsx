@@ -3,6 +3,7 @@ import { ReactNode } from "react";
 import "../globals.css";
 //import { I18NProvider } from "@/context/ditionary";
 import VrilBot from "@/components/VrilBot/VrilBot";
+import { LangProvider } from "@/components/LangProvider/LangProvider";
 
 export const metadata: Metadata = {
   title: "BridgeCore",
@@ -25,7 +26,7 @@ export default async function RootLayout({
   return (
     <html lang={lang}>
       <body>
-        {children}
+        <LangProvider lang={params.lang}>{children}</LangProvider>
         <VrilBot />
       </body>
     </html>
