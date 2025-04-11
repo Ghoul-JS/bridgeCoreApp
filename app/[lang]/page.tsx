@@ -28,15 +28,15 @@ export default async function Home({
       </div> */}
       <Card lang={lang} />
 
-      <Navbar />
+      <Navbar lang={lang} />
       <main className="flex-1 relative z-10">
         {/* <LandingPage /> */}
         {/* <Wpp /> */}
         {/* pto wp */}
-        <VrilBot />
-        <Services id="services" />
-        <CarouselSlider />
 
+        <Services id="services" lang={lang} />
+        <CarouselSlider lang={lang} />
+        <VrilBot />
         <section id="about" className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -53,7 +53,7 @@ export default async function Home({
           </div>
         </section>
       </main>
-      <Footer />
+      <Footer lang={lang} />
     </div>
   );
 }

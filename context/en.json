@@ -4,10 +4,11 @@
     "text": "At BridgeCore, we merge creativity and technology to develop software solutions that drive our clients' success. Our team of experts is committed to excellence and innovation in every project.",
     "button": "Learn More About Us"
   },
-  "NavBar": {
-    "b1": "services",
-    "b2": "about",
-    "b3": "contact"
+  "Nav": {
+    "inicio": "home",
+    "services": "services",
+    "about": "about",
+    "contact": "contact"
   },
   "LandingPage": {
     "title": "Create Your Environment with",
@@ -15,8 +16,29 @@
     "text": "Transforming Ideas into Innovative Digital Realities",
     "button": "Explore Our Solutions"
   },
-  "Services": {
-    "service": "Our services"
+  "Carousel": {
+    "title": "Projects"
+  },
+  "Service": {
+    "title": "Our services",
+    "service": [
+      {
+        "title": "Mobile Development",
+        "description": "Intuitive and powerful applications"
+      },
+      {
+        "title": "Web Solutions",
+        "description": "Scalable and Responsive Platforms"
+      },
+      {
+        "title": "Automation",
+        "description": "Business process optimization"
+      },
+      {
+        "title": "Chat Bot",
+        "description": "Automatic and personalized interactions"
+      }
+    ]
   },
   "Footer": {
     "categories": {

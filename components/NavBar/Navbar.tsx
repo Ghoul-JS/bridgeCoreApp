@@ -7,11 +7,18 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { usePathname, useRouter } from "next/navigation";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher/Switch";
-//import { getDictionary } from "@/context/dictionary";
+import { getDictionary } from "@/context/dictionary";
 
-const NavItems = async ({ mobile = false }: { mobile?: boolean }) => {
+const NavItems = async ({
+  mobile = false,
+  lang,
+}: {
+  mobile?: boolean;
+  lang: "en" | "es";
+}) => {
   const router = useRouter();
   const pathname = usePathname();
+  const t = (await getDictionary(lang)).Nav;
 
   const handleScroll = (
     event: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
@@ -51,7 +58,7 @@ const NavItems = async ({ mobile = false }: { mobile?: boolean }) => {
             href="/"
             onClick={(e) => handleScroll(e, "services", router, pathname)}
           >
-            Inicio
+            {t.inicio}
           </a>
         </Button>
         <Button variant="ghost" asChild className="text-white hover:text-white">
@@ -59,21 +66,21 @@ const NavItems = async ({ mobile = false }: { mobile?: boolean }) => {
             href="#services"
             onClick={(e) => handleScroll(e, "services", router, pathname)}
           >
-            Services
+            {t.services}
           </a>
         </Button>
         <Button variant="ghost" asChild className="text-white hover:text-white">
-          <Link href="/about">About</Link>
+          <Link href="/about">{t.about}</Link>
         </Button>
         <Button variant="ghost" asChild className="text-white hover:text-white">
-          <Link href="/contact">Contact</Link>
+          <Link href="/contact">{t.contact}</Link>
         </Button>
       </div>
     </div>
   );
 };
 
-export function Navbar() {
+export function Navbar({ lang }: { lang: "en" | "es" }) {
   const [isScrolled, setIsScrolled] = React.useState(false);
 
   React.useEffect(() => {
@@ -91,7 +98,7 @@ export function Navbar() {
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link href="/" className=":hiden text-2xl font-bold text-white"></Link>
         <div className="hidden md:flex justify-between space-x-4 w-full">
-          <NavItems />
+          <NavItems lang={lang} />
         </div>
         <Sheet>
           <SheetTrigger asChild>
@@ -106,7 +113,7 @@ export function Navbar() {
           </SheetTrigger>
           <SheetContent side="right" className="bg-blue-900/95 text-white">
             <nav className="flex flex-col space-y-4 mt-6">
-              <NavItems mobile />
+              <NavItems lang={lang} mobile />
             </nav>
           </SheetContent>
         </Sheet>

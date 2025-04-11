@@ -4,19 +4,41 @@
     "text": "En BridgeCore, fusionamos creatividad y tecnología para desarrollar soluciones de software que impulsan el éxito de nuestros clientes. Nuestro equipo de expertos está comprometido con la excelencia y la innovación en cada proyecto.",
     "button": "Conoce Más Sobre Nosotros"
   },
-  "NavBar": {
-    "b1": "Servicios",
-    "b2": "Sobre nosotros",
-    "b3": "Contacto"
+  "Nav": {
+    "inicio": "inicio",
+    "services": "servicios",
+    "about": "sobre nosotros",
+    "contact": "contacto"
   },
   "LandingPage": {
-    "title": "Create Your Environment with",
+    "title": "Crea tu entorno de trabajo con",
     "span1": "BridgeCore",
     "text": " Transformando Ideas en Realidades Digitales Innovadoras",
     "button": "Explora Nuestras Soluciones"
   },
-  "Services": {
-    "service": "Nuestros Servicios"
+  "Carousel": {
+    "title": "Proyectos"
+  },
+  "Service": {
+    "title": "Nuestros Servicios",
+    "service": [
+      {
+        "title": "Desarrollo Móvil",
+        "description": "Aplicaciones intuitivas y potentes"
+      },
+      {
+        "title": "Soluciones Web",
+        "description": "Plataformas escalables y con capacidad de respuesta"
+      },
+      {
+        "title": "Automatización",
+        "description": "Optimización de procesos empresariales"
+      },
+      {
+        "title": "Chat Bot",
+        "description": "Interacciones automáticas y personalizadas"
+      }
+    ]
   },
   "Footer": {
     "categories": {
@@ -26,7 +48,7 @@
           "Desarrollo Móvil",
           "Soluciones Web",
           "Automatización",
-          "Consultoría IT"
+          "Chat Bot"
         ]
       },
       "support": {

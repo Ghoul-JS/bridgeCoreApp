@@ -1,7 +1,13 @@
+// context/dictionary.ts
+import enTranslations from "./en.json";
+import esTranslations from "./es.json";
+
 const dictionaries = {
-  en: () => import("./en.json").then((module) => module.default),
-  es: () => import("./es.json").then((module) => module.default),
+  en: enTranslations,
+  es: esTranslations,
 };
 
-export const getDictionary = async (locale: "en" | "es") =>
-  dictionaries[locale]();
+export const getDictionary = async (locale: "en" | "es") => {
+  console.log("Loading dictionary:", locale);
+  return dictionaries[locale] || dictionaries.en;
+};
