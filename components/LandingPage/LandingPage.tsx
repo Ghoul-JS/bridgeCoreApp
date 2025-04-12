@@ -1,11 +1,13 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { getDictionary } from "@/context/dictionary";
 
-export async function LandingPage({ lang }: { lang: "en" | "es" }) {
-  const langs = lang;
-  const t = (await getDictionary(langs)).LandingPage;
-
+export function LandingPage({
+  lang,
+  dictionary: t,
+}: {
+  lang: "en" | "es";
+  dictionary: any;
+}) {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
       <div className="container px-4 md:px-6">

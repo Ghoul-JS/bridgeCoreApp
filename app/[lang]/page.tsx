@@ -18,7 +18,7 @@ export default async function Home({
 
   return (
     <div className="flex flex-col items-center min-h-screen bg-black text-gray-100 overflow-hidden">
-      <Card lang={lang} />
+      <Card lang={lang} dictionary={dict.LandingPage} />
       <Navbar lang={lang} dictionary={dict.Nav} />
       <main className="flex-1 relative z-10">
         <Services id="services" lang={lang} />
