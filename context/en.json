@@ -19,6 +19,21 @@
   "Carousel": {
     "title": "Projects"
   },
+  "Contact": {
+    "title": "Contact us",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "submit": "Send Message"
+  },
+  "About": {
+    "title": "Innovation in Every Line of Code",
+    "text": "At BridgeCore, we merge creativity and technology to develop software solutions that drive our clients' success. Our team of experts is committed to excellence and innovation in every project.",
+    "li1": "More than 10 years of experience in the technology sector",
+    "li2": "Multidisciplinary team of developers, designers, and UX experts",
+    "li3": "Agile methodologies for fast and efficient delivery",
+    "li4": "Commitment to quality and customer satisfaction"
+  },
   "Service": {
     "title": "Our services",
     "service": [
@@ -40,74 +55,80 @@
       }
     ]
   },
-  "PP": [
-    {
-      "title": "Data Collection in Mobile Applications",
-      "description": "We detail what personal information we collect through our mobile applications, including usage data, location (if necessary for functionality) and any information voluntarily provided by the user."
-    },
-    {
-      "title": "Cookie Management and Browsing Data",
-      "description": "We explain how we use cookies and similar technologies on our web platforms to improve user experience, analyze traffic, and personalize content."
-    },
-    {
-      "title": "Security in Automated Processes",
-      "description": "We describe the protection measures implemented to safeguard data used in our business automation solutions, including encryption and access controls."
-    },
-    {
-      "title": "Privacy in Chatbot Interactions",
-      "description": "We specify how conversations and data shared through our chatbot systems are handled, stored, and protected, and how they are used to improve the service."
-    },
-    {
-      "title": "Sharing Data with Third Parties",
-      "description": "We detail when and how we might share information with technology partners, service providers, or legally authorized entities, always prioritizing user data protection."
-    },
-    {
-      "title": "User Rights",
-      "description": "We inform about the rights users have regarding their personal data, including access, rectification, deletion, portability, and opposition to processing."
-    },
-    {
-      "title": "Data Retention and Deletion",
-      "description": "We establish our policies on how long we keep user data in our systems and the processes for its secure deletion when no longer needed."
-    },
-    {
-      "title": "Policy Updates",
-      "description": "We explain how and when we might update our privacy policy, and how we will notify users about significant changes in our data handling practices."
-    }
-  ],
-  "TC": [
-    {
-      "title": "Scope of Services",
-      "description": "We clearly define the services we offer, including mobile development, web solutions, process automation, and chatbot systems, as well as the technical and operational limitations of each."
-    },
-    {
-      "title": "Intellectual Property",
-      "description": "We establish the intellectual property rights related to our products, source code, designs, and content, specifying what belongs to our company and what licenses are granted to the client."
-    },
-    {
-      "title": "User Responsibilities",
-      "description": "We detail the obligations of users when using our services, including the appropriate use of applications, web platforms, and automated systems that we develop."
-    },
-    {
-      "title": "Limitations of Liability",
-      "description": "We clarify the limits of our liability regarding service interruptions, technical errors, data loss, and other incidents that could affect the operation of our solutions."
-    },
-    {
-      "title": "Payment and Billing Terms",
-      "description": "We define the payment conditions, deadlines, accepted methods, refund policies, and any recurring charges related to our development and maintenance services."
-    },
-    {
-      "title": "Confidentiality",
-      "description": "We establish mutual confidentiality obligations regarding sensitive information exchanged during project development and solution implementation."
-    },
-    {
-      "title": "Cancellation and Termination",
-      "description": "We detail the conditions under which both parties can terminate the contractual relationship, including procedures, notifications, and consequences on active services."
-    },
-    {
-      "title": "Applicable Law and Dispute Resolution",
-      "description": "We specify the legal jurisdiction that governs our agreements and the mechanisms to resolve possible disputes, whether through mediation, arbitration, or judicial procedures."
-    }
-  ],
+  "PP": {
+    "title": "Privacy Policy",
+    "Politics": [
+      {
+        "title": "Data Collection in Mobile Applications",
+        "description": "We detail what personal information we collect through our mobile applications, including usage data, location (if required for functionality), and any information voluntarily provided by the user."
+      },
+      {
+        "title": "Cookie and Browsing Data Management",
+        "description": "We explain how we use cookies and similar technologies on our web platforms to enhance user experience, analyze traffic, and personalize content."
+      },
+      {
+        "title": "Security in Automated Processes",
+        "description": "We describe the protection measures implemented to safeguard data used in our business automation solutions, including encryption and access controls."
+      },
+      {
+        "title": "Privacy in Chatbot Interactions",
+        "description": "We specify how conversations and data shared through our chatbot systems are handled, stored, and protected, and how they are used to improve the service."
+      },
+      {
+        "title": "Data Sharing with Third Parties",
+        "description": "We detail when and how we may share information with technology partners, service providers, or legally authorized entities, always prioritizing the protection of user data."
+      },
+      {
+        "title": "User Rights",
+        "description": "We inform users about their rights regarding their personal data, including access, rectification, deletion, portability, and objection to processing."
+      },
+      {
+        "title": "Data Retention and Deletion",
+        "description": "We establish our policies on how long we retain user data in our systems and the processes for securely deleting it when it is no longer needed."
+      },
+      {
+        "title": "Policy Updates",
+        "description": "We explain how and when we might update our privacy policy, and how we will notify users about significant changes in our data handling practices."
+      }
+    ]
+  },
+  "TC": {
+    "title": "Terms and Conditions",
+    "Terms": [
+      {
+        "title": "Scope of Services",
+        "description": "We clearly define the services we offer, including mobile development, web solutions, process automation, and chatbot systems, as well as the technical and operational limitations of each."
+      },
+      {
+        "title": "Intellectual Property",
+        "description": "We establish intellectual property rights related to our products, source code, designs, and content, specifying what belongs to our company and what licenses are granted to the client."
+      },
+      {
+        "title": "User Responsibilities",
+        "description": "We detail the obligations of users when using our services, including the appropriate use of applications, web platforms, and automated systems we develop."
+      },
+      {
+        "title": "Limitation of Liability",
+        "description": "We clarify the limits of our liability regarding service interruptions, technical errors, data loss, and other incidents that may affect the operation of our solutions."
+      },
+      {
+        "title": "Payment and Billing Terms",
+        "description": "We define payment conditions, deadlines, accepted methods, refund policies, and any recurring charges related to our development and maintenance services."
+      },
+      {
+        "title": "Confidentiality",
+        "description": "We establish mutual confidentiality obligations regarding sensitive information exchanged during project development and solution implementation."
+      },
+      {
+        "title": "Cancellation and Termination",
+        "description": "We detail the conditions under which both parties may terminate the contractual relationship, including procedures, notifications, and consequences for active services."
+      },
+      {
+        "title": "Applicable Law and Dispute Resolution",
+        "description": "We specify the legal jurisdiction governing our agreements and the mechanisms for resolving potential disputes, whether through mediation, arbitration, or judicial proceedings."
+      }
+    ]
+  },
   "Footer": {
     "categories": {
       "solutions": {

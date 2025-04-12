@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Navbar } from "@/components/NavBar/Navbar";
-import { Footer } from "@/components/Footer/Footer";
+import Footer from "@/components/Footer/Footer";
 import { useRef } from "react";
 import { getDictionary } from "@/context/dictionary";
 import { useParams, usePathname } from "next/navigation";
@@ -14,10 +14,11 @@ import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 import { Config } from "tailwind-merge";
 
-const Contact = () => {
+const Contact = async () => {
   const form = useRef<HTMLFormElement | null>(null);
 
   const { lang } = useLang();
+  const t = (await getDictionary(lang)).Contact;
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -60,7 +61,7 @@ const Contact = () => {
       >
         <div className="container px-4 md:px-6 mx-auto">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-center mb-12 text-white">
-            Contáctanos
+            {t.title}
           </h2>
           <div className="max-w-2xl mx-auto">
             <form className="space-y-4" onSubmit={sendEmail} ref={form}>
@@ -70,25 +71,25 @@ const Contact = () => {
                     htmlFor="name"
                     className="text-sm font-medium text-gray-200"
                   >
-                    Nombre
+                    {t.name}
                   </label>
                   <Input
                     id="user_name"
-                    placeholder="Tu nombre"
+                    placeholder=""
                     name="user_name"
                     className="bg-gray-800 border-gray-700 text-white"
                   />
                 </div>
                 <div className="space-y-2">
                   <label
-                    htmlFor="email"
+                    htmlFor=""
                     className="text-sm font-medium text-gray-200"
                   >
-                    Email
+                    {t.email}
                   </label>
                   <Input
                     id="user_email"
-                    placeholder="tu@email.com"
+                    placeholder=""
                     type="email"
                     name="user_email"
                     className="bg-gray-800 border-gray-700 text-white"
@@ -100,7 +101,7 @@ const Contact = () => {
                   htmlFor="message"
                   className="text-sm font-medium text-gray-200"
                 >
-                  Mensaje
+                  {t.message}
                 </label>
                 <Textarea
                   id="message"
@@ -113,7 +114,7 @@ const Contact = () => {
                 type="submit"
                 className="w-full bg-blue-600 hover:bg-blue-700 text-white"
               >
-                Enviar Mensaje
+                {t.submit}{" "}
               </Button>
             </form>
           </div>

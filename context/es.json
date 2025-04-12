@@ -20,9 +20,19 @@
     "title": "Proyectos"
   },
   "Contact": {
+    "title": "Contactanos",
     "name": "Nombre",
     "email": "Email",
-    "message": "Mensaje"
+    "message": "Mensaje",
+    "submit": "Enviar Mensaje"
+  },
+  "About": {
+    "title": "Innovación en Cada Línea de Código",
+    "text": "En BridgeCore, fusionamos creatividad y tecnología para desarrollar soluciones de software que impulsan el éxito de nuestros clientes. Nuestro equipo de expertos está comprometido con la excelencia y la innovación en cada proyecto.",
+    "li1": "Más de 10 años de experiencia en el sector tecnológico",
+    "li2": "Equipo multidisciplinario de desarrolladores, diseñadores y expertos en UX",
+    "li3": "Metodologías ágiles para una entrega rápida y eficiente",
+    "li4": "Compromiso con la calidad y la satisfacción del cliente"
   },
   "Service": {
     "title": "Nuestros Servicios",
@@ -45,74 +55,80 @@
       }
     ]
   },
-  "PP": [
-    {
-      "title": "Recopilación de Datos en Aplicaciones Móviles",
-      "description": "Detallamos qué información personal recopilamos a través de nuestras aplicaciones móviles, incluyendo datos de uso, ubicación (si es necesario para la funcionalidad) y cualquier información proporcionada voluntariamente por el usuario."
-    },
-    {
-      "title": "Gestión de Cookies y Datos de Navegación",
-      "description": "Explicamos cómo utilizamos cookies y tecnologías similares en nuestras plataformas web para mejorar la experiencia del usuario, analizar el tráfico y personalizar contenido."
-    },
-    {
-      "title": "Seguridad en Procesos Automatizados",
-      "description": "Describimos las medidas de protección implementadas para salvaguardar los datos utilizados en nuestras soluciones de automatización empresarial, incluyendo encriptación y controles de acceso."
-    },
-    {
-      "title": "Privacidad en Interacciones con Chatbots",
-      "description": "Especificamos cómo se manejan, almacenan y protegen las conversaciones y datos compartidos a través de nuestros sistemas de chatbot, y cómo se utilizan para mejorar el servicio."
-    },
-    {
-      "title": "Compartición de Datos con Terceros",
-      "description": "Detallamos cuándo y cómo podríamos compartir información con socios tecnológicos, proveedores de servicios o entidades legalmente autorizadas, siempre priorizando la protección de datos del usuario."
-    },
-    {
-      "title": "Derechos del Usuario",
-      "description": "Informamos sobre los derechos que tienen los usuarios respecto a sus datos personales, incluyendo acceso, rectificación, eliminación, portabilidad y oposición al procesamiento."
-    },
-    {
-      "title": "Retención y Eliminación de Datos",
-      "description": "Establecemos nuestras políticas sobre cuánto tiempo mantenemos los datos del usuario en nuestros sistemas y los procesos para su eliminación segura cuando ya no son necesarios."
-    },
-    {
-      "title": "Actualizaciones de la Política",
-      "description": "Explicamos cómo y cuándo podríamos actualizar nuestra política de privacidad, y cómo notificaremos a los usuarios sobre cambios significativos en nuestras prácticas de manejo de datos."
-    }
-  ],
-  "TC": [
-    {
-      "title": "Alcance de los Servicios",
-      "description": "Definimos claramente los servicios que ofrecemos, incluyendo desarrollo móvil, soluciones web, automatización de procesos y sistemas de chatbot, así como las limitaciones técnicas y operativas de cada uno."
-    },
-    {
-      "title": "Propiedad Intelectual",
-      "description": "Establecemos los derechos de propiedad intelectual relacionados con nuestros productos, código fuente, diseños y contenido, especificando qué pertenece a nuestra empresa y qué licencias se otorgan al cliente."
-    },
-    {
-      "title": "Responsabilidades del Usuario",
-      "description": "Detallamos las obligaciones de los usuarios al utilizar nuestros servicios, incluyendo el uso apropiado de las aplicaciones, plataformas web y sistemas automatizados que desarrollamos."
-    },
-    {
-      "title": "Limitaciones de Responsabilidad",
-      "description": "Aclaramos los límites de nuestra responsabilidad respecto a interrupciones del servicio, errores técnicos, pérdida de datos y otros incidentes que pudieran afectar el funcionamiento de nuestras soluciones."
-    },
-    {
-      "title": "Términos de Pago y Facturación",
-      "description": "Definimos las condiciones de pago, plazos, métodos aceptados, políticas de reembolso y cualquier cargo recurrente relacionado con nuestros servicios de desarrollo y mantenimiento."
-    },
-    {
-      "title": "Confidencialidad",
-      "description": "Establecemos las obligaciones mutuas de confidencialidad respecto a información sensible intercambiada durante el desarrollo de proyectos y la implementación de soluciones."
-    },
-    {
-      "title": "Cancelación y Rescisión",
-      "description": "Detallamos las condiciones bajo las cuales ambas partes pueden terminar la relación contractual, incluyendo procedimientos, notificaciones y consecuencias sobre los servicios activos."
-    },
-    {
-      "title": "Ley Aplicable y Resolución de Disputas",
-      "description": "Especificamos la jurisdicción legal que rige nuestros acuerdos y los mecanismos para resolver posibles disputas, ya sea mediante mediación, arbitraje o procedimientos judiciales."
-    }
-  ],
+  "PP": {
+    "title": "Política de Privacidad",
+    "Politics": [
+      {
+        "title": "Recopilación de Datos en Aplicaciones Móviles",
+        "description": "Detallamos qué información personal recopilamos a través de nuestras aplicaciones móviles, incluyendo datos de uso, ubicación (si es necesario para la funcionalidad) y cualquier información proporcionada voluntariamente por el usuario."
+      },
+      {
+        "title": "Gestión de Cookies y Datos de Navegación",
+        "description": "Explicamos cómo utilizamos cookies y tecnologías similares en nuestras plataformas web para mejorar la experiencia del usuario, analizar el tráfico y personalizar contenido."
+      },
+      {
+        "title": "Seguridad en Procesos Automatizados",
+        "description": "Describimos las medidas de protección implementadas para salvaguardar los datos utilizados en nuestras soluciones de automatización empresarial, incluyendo encriptación y controles de acceso."
+      },
+      {
+        "title": "Privacidad en Interacciones con Chatbots",
+        "description": "Especificamos cómo se manejan, almacenan y protegen las conversaciones y datos compartidos a través de nuestros sistemas de chatbot, y cómo se utilizan para mejorar el servicio."
+      },
+      {
+        "title": "Compartición de Datos con Terceros",
+        "description": "Detallamos cuándo y cómo podríamos compartir información con socios tecnológicos, proveedores de servicios o entidades legalmente autorizadas, siempre priorizando la protección de datos del usuario."
+      },
+      {
+        "title": "Derechos del Usuario",
+        "description": "Informamos sobre los derechos que tienen los usuarios respecto a sus datos personales, incluyendo acceso, rectificación, eliminación, portabilidad y oposición al procesamiento."
+      },
+      {
+        "title": "Retención y Eliminación de Datos",
+        "description": "Establecemos nuestras políticas sobre cuánto tiempo mantenemos los datos del usuario en nuestros sistemas y los procesos para su eliminación segura cuando ya no son necesarios."
+      },
+      {
+        "title": "Actualizaciones de la Política",
+        "description": "Explicamos cómo y cuándo podríamos actualizar nuestra política de privacidad, y cómo notificaremos a los usuarios sobre cambios significativos en nuestras prácticas de manejo de datos."
+      }
+    ]
+  },
+  "TC": {
+    "title": "Términos y Condiciones",
+    "Terms": [
+      {
+        "title": "Alcance de los Servicios",
+        "description": "Definimos claramente los servicios que ofrecemos, incluyendo desarrollo móvil, soluciones web, automatización de procesos y sistemas de chatbots, así como las limitaciones técnicas y operativas de cada uno."
+      },
+      {
+        "title": "Propiedad Intelectual",
+        "description": "Establecemos los derechos de propiedad intelectual relacionados con nuestros productos, código fuente, diseños y contenido, especificando qué pertenece a nuestra empresa y qué licencias se otorgan al cliente."
+      },
+      {
+        "title": "Responsabilidades del Usuario",
+        "description": "Detallamos las obligaciones de los usuarios al utilizar nuestros servicios, incluyendo el uso adecuado de aplicaciones, plataformas web y sistemas automatizados que desarrollamos."
+      },
+      {
+        "title": "Limitación de Responsabilidad",
+        "description": "Aclaramos los límites de nuestra responsabilidad respecto a interrupciones del servicio, errores técnicos, pérdida de datos y otros incidentes que puedan afectar el funcionamiento de nuestras soluciones."
+      },
+      {
+        "title": "Términos de Pago y Facturación",
+        "description": "Definimos las condiciones de pago, plazos, métodos aceptados, políticas de reembolso y cualquier cargo recurrente relacionado con nuestros servicios de desarrollo y mantenimiento."
+      },
+      {
+        "title": "Confidencialidad",
+        "description": "Establecemos obligaciones mutuas de confidencialidad respecto a la información sensible intercambiada durante el desarrollo de proyectos y la implementación de soluciones."
+      },
+      {
+        "title": "Cancelación y Terminación",
+        "description": "Detallamos las condiciones bajo las cuales ambas partes pueden terminar la relación contractual, incluyendo procedimientos, notificaciones y consecuencias para los servicios activos."
+      },
+      {
+        "title": "Ley Aplicable y Resolución de Disputas",
+        "description": "Especificamos la jurisdicción legal que rige nuestros acuerdos y los mecanismos para resolver posibles disputas, ya sea mediante mediación, arbitraje o procedimientos judiciales."
+      }
+    ]
+  },
   "Footer": {
     "categories": {
       "solutions": {

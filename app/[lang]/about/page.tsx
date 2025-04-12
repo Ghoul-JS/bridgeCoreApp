@@ -1,8 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Navbar } from "@/components/NavBar/Navbar";
-import { Footer } from "@/components/Footer/Footer";
+import Footer from "@/components/Footer/Footer";
 import BgAnimated from "@/components/BgAnimated/BgAnimated";
 import { useLang } from "@/components/LangProvider/LangProvider";
+import { getDictionary } from "@/context/dictionary";
 
 const About = () => {
   const { lang } = useLang();
